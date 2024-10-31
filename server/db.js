@@ -1,13 +1,13 @@
 import Sequelize from 'sequelize'
 
 const sequelize = new Sequelize(
-    'spotfake',
-    'postgres',
-    'postgres',
+    'spotfake', //nome do database
+    'postgres',  // usuario do servidor
+    'postgres',  // senha do servidor
     {
-        host: 'localhost',
-        port: 5432,
-        dialect: 'postgres'
+        host: 'localhost', // endereço do servidor
+        port: 5432,  // porta onde o esta sendo rodado
+        dialect: 'postgres' // tipo de sgbd
     }
 )
 const User = sequelize.define('user', {
